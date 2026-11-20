@@ -41,6 +41,8 @@ To bridge this Active Directory domain with our centralized SIEM monitoring infr
 
 ## 3. Top 5 AD Detection Rules (Sigma Ready)
 
+> **Starter templates, not validated detections.** None of these rules has been run against captured attack telemetry yet. Expect to baseline and filter before use - for example Rule 5 (`EventID: 4720`) fires on every legitimate account creation, and Rule 1's fixed `TicketOptions` value will miss Kerberoasting tools that request tickets with different options.
+
 ### Rule 1: Suspicious Kerberos TGS Request (Kerberoasting)
 ```yaml
 title: Potential Kerberoasting Ticket Request

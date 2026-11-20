@@ -2,8 +2,8 @@
 
 <img src="assets/banner.jpg" alt="Enterprise Active Directory Infrastructure & SOC Threat Detection Lab Hero Banner" width="100%" />
 
-# 🛡️ Enterprise Active Directory Infrastructure & SOC Threat Detection Lab
-### *Production Windows Server 2022 Forest, High Availability, DNS/DHCP, GPO Hardening & Telemetry*
+# 🛡️ Active Directory Infrastructure Lab & SIEM Detection Blueprint
+### *Windows Server 2022 Lab Forest, High Availability, DNS/DHCP, GPO Hardening & Audit-Policy Baseline*
 
 [![OS - Windows Server 2022](https://img.shields.io/badge/OS-Windows_Server_2022-0078D6?style=for-the-badge&logo=windows-server&logoColor=white)](#)
 [![Directory - Active Directory DS](https://img.shields.io/badge/Active_Directory-AD_DS_Forest-00A4EF?style=for-the-badge&logo=microsoft&logoColor=white)](#)
@@ -18,7 +18,9 @@
 
 ## Executive Overview
 
-An enterprise-grade **Active Directory Domain Services (AD DS)** environment built on **Windows Server 2022** and **VMware Workstation Pro**. Designed from a **SOC Analyst & Detection Engineer** perspective, this lab implements high availability via an **Additional Domain Controller (ADC)**, **AD-Integrated DNS/DHCP**, hardened **GPOs with WMI filtering**, and comprehensive **Advanced Audit Policies** mapped to **MITRE ATT&CK** threat detection requirements.
+> **Project status (honest scope):** the Active Directory infrastructure (forest, second DC, DNS/DHCP, GPO, FSMO, audit baseline) is built and documented. The **SIEM detection side is a design blueprint**: domain-controller logs have *not* yet been forwarded to Splunk/Wazuh and no AD attacks (Kerberoasting, DCSync, pass-the-hash...) have been executed or captured here yet. That is the next phase.
+
+A lab-scale **Active Directory Domain Services (AD DS)** environment built on **Windows Server 2022** and **VMware Workstation Pro**. Designed from a **SOC Analyst & Detection Engineer** perspective, this lab implements high availability via an **Additional Domain Controller (ADC)**, **AD-Integrated DNS/DHCP**, hardened **GPOs with WMI filtering**, and comprehensive **Advanced Audit Policies** mapped to **MITRE ATT&CK** threat detection requirements.
 
 ```mermaid
 graph TD
